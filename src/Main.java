@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -73,6 +75,27 @@ class leepyear {
         }
     }
 }
+
+
+class powervalue{
+    public static void main(String[] args) {
+        int N = 35;
+        if (N >= 0 && N < 31) {
+
+            BigInteger result = BigInteger.valueOf(2).pow(N);
+            System.out.println("2^" + N + " = " + result);
+        } else {
+            System.out.println("Exponent value out of range.");
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
 
