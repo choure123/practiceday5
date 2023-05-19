@@ -49,6 +49,30 @@ class repeat {
     }
 
 
+class leepyear {
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Please provide a year as a command-line argument.");
+            return;
+        }
+
+        int year = Integer.parseInt(args[0]);
+
+        boolean isLeapYear = false;
+
+        if (year % 4 == 0) {
+            if (year % 100 != 0 || year % 400 == 0) {
+                isLeapYear = true;
+            }
+        }
+
+        if (isLeapYear) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+}
 
 
 
